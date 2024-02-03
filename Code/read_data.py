@@ -33,7 +33,7 @@ def execute_data(inppath ,tax_data):
 
     # Read japtinotice data
     # Read japtinotice data
-    japtinotice_file = "Japti_data02082023.csv"
+    japtinotice_file = "Japti_data03102023.csv"
     japtinotice_data = pd.read_csv(tax_data + japtinotice_file, encoding='utf-8')
     japtinotice_data['propertycode'] = japtinotice_data['propertycode'].astype(float)
     # Rename in standard columns 'arrearsdemand', 'currentdemand', and 'totaldemand'

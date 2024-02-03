@@ -36,3 +36,5 @@ def get_current_location():
     geolocator = Nominatim(user_agent="property_sorting")
     location = geolocator.geocode("Pimpri-Chinchwad")
     return location.latitude, location.longitude
+
+get_current_location()

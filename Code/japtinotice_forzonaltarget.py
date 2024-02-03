@@ -65,12 +65,15 @@ df_above2L = df_sorted[(df_sorted['Total_Amount'] >= 200000)]
 #--------------------------------------------------------------------------------------------------
 df_above2L['Zone_eng'] = df_above2L['Zone'].map(zonemap)
 
-lst = [ 'Bhosari',  'Nigdi Pradhikaran', 'Talvade', 'Chinchwad', 'Chikhali','Charholi',
-       'Pimpri Nagar', 'Thergaon', 'Fugewadi Dapodi',  'Moshi']
+# lst = [ 'Akurdi', 'Bhosari',  'Nigdi Pradhikaran', 'Talvade', 'Chinchwad', 'Chikhali','Charholi',
+#        'Pimpri Nagar', 'Thergaon', 'Fugewadi Dapodi',  'Moshi']
+lst = ['Akurdi', 'Bhosari', 'Dighi Bopkhel', 'MNP Bhavan', 'Nigdi Pradhikaran', 'Talvade', 'Chinchwad', 'Chikhali',
+       'Pimpri Nagar', 'Thergaon', 'Wakad', 'Kivle', 'Fugewadi Dapodi', 'Pimpri Waghere', 'Sangvi', 'Charholi', 'Moshi']
 selctedzone_data = df_above2L[df_above2L['Zone_eng'].isin(lst)]
-
 wout_latlong =  selctedzone_data[selctedzone_data['propertyLong'] > 0]
 
+lst = ['Akurdi', 'Dighi Bopkhel', 'MNP Bhavan',
+        'Wakad', 'Kivle',  'Pimpri Waghere', 'Sangvi']
 #----------------------------------------------------------------------------------------------------
 # lst = ['Akurdi', 'Bhosari', 'Dighi Bopkhel', 'MNP Bhavan', 'Nigdi Pradhikaran', 'Talvade', 'Chinchwad', 'Chikhali',
 #        'Pimpri Nagar', 'Thergaon', 'Wakad', 'Kivle', 'Fugewadi Dapodi', 'Pimpri Waghere', 'Sangvi', 'Charholi', 'Moshi']
